@@ -1,0 +1,119 @@
+.staking-calculator {
+  background: linear-gradient(300.05deg, #336ABD -11.37%, #003E80 -4.14%, #043F82 -3.89%, #4550A1 0.52%, #795EBA 4.51%, #9F68CC 7.96%, #B66ED7 10.74%, #BE70DB 12.49%, #C576CD 17.7%, #D887A9 27.44%, #EC9984 36.21%, #F1DE91 51.23%, #E6CED9 63.47%, #CBC5E7 67.69%, #B2BCF4 72.7%, #A3B7FC 77.28%, #9EB5FF 81%);
+  box-shadow: inset -2px -2px 8px rgba(0, 0, 0, 0.64), inset 2px 2px 8px rgba(0, 0, 0, 0.64);
+  border-radius: 16px;
+  padding: 8px;
+}
+.staking-calculator__box {
+  background-color: #232530;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  padding: 16px 8px;
+  overflow: hidden;
+}
+.staking-calculator__graph {
+  position: relative;
+  z-index: 1;
+  margin-top: 16px;
+}
+.staking-calculator__graph-chart {
+  position: relative;
+  z-index: 1;
+  min-height: 194px;
+}
+.staking-calculator__graph svg {
+  display: block;
+  width: 100%;
+}
+.staking-calculator__graph-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.staking-calculator__graph-buttons .staking-calculator__graph-button:nth-child(2n) {
+  display: none;
+}
+.staking-calculator__graph-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  background-color: #232530;
+  border: 1px solid #3D3D58;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+.staking-calculator__graph-button_active {
+  border-color: #007AFF;
+}
+.staking-calculator__button {
+  margin-top: 16px;
+}
+.staking-calculator__info {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 400px) {
+  .staking-calculator__graph-button {
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .staking-calculator__graph-buttons .staking-calculator__graph-button:nth-child(2n) {
+    display: flex;
+  }
+  .staking-calculator__graph-button {
+    width: 18%;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .staking-calculator__graph-button {
+    width: auto;
+  }
+  .staking-calculator {
+    border-radius: 24px;
+  }
+  .staking-calculator__box {
+    border-radius: 24px;
+    padding: 20px;
+  }
+  .staking-calculator__graph {
+    margin-top: 24px;
+  }
+  .staking-calculator__graph-button {
+    cursor: pointer;
+    transition: border ease .3s;
+  }
+  .staking-calculator__graph-button:hover {
+    border-color: #007AFF;
+  }
+  .staking-calculator__button {
+    width: 100%;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .staking-calculator__box {
+    padding: 40px;
+  }
+  .staking-calculator__graph-button:first-child {
+    width: auto;
+  }
+}
