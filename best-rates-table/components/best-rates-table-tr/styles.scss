@@ -1,0 +1,103 @@
+.best-rates-table-tr {
+  outline: 0;
+  cursor: pointer;
+}
+.best-rates-table-tr:last-child .best-rates-table-tr__td {
+  border-bottom: 1px solid #252531;
+}
+.best-rates-table-tr__td {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.34px;
+  color: #ffffff;
+  text-align: left;
+  border-top: 1px solid #252531;
+  padding: 12px 0;
+}
+.best-rates-table-tr__td:first-child {
+  width: 176px;
+  padding-left: 16px;
+  padding-right: 10px;
+}
+.best-rates-table-tr__td:nth-child(2) {
+  padding-right: 16px;
+}
+.best-rates-table-tr__td-left-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.best-rates-table-tr__images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+.best-rates-table-tr__images img {
+  display: block;
+}
+.best-rates-table-tr__image-last {
+  position: relative;
+  margin-left: -4px;
+}
+.best-rates-table-tr__image-last:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #2B2B37;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 0;
+}
+.best-rates-table-tr__image-last img {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.best-rates-table-tr__tickers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.best-rates-table-tr__tickers-arrow {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.best-rates-table-tr__price {
+  word-break: break-word;
+}
+.best-rates-table-tr__percent {
+  margin-top: 4px;
+}
+.best-rates-table-tr__percent_plus {
+  color: #00C26F;
+}
+.best-rates-table-tr__percent_minus {
+  color: #F42841;
+}
+
+@media screen and (min-width: 768px) {
+  .best-rates-table-tr__td-right-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .best-rates-table-tr__percent {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .best-rates-table-tr__td:first-child {
+    width: 210px;
+  }
+  .best-rates-table-tr__td {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
