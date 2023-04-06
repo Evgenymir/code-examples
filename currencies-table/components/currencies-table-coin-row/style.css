@@ -1,0 +1,87 @@
+.currencies-table-coin-row {
+  display: block;
+  border-top: 1px solid #3D3D58;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.currencies-table-coin-row:hover .currencies-table-coin-row__ticker {
+  color: #00C26F;
+}
+.currencies-table-coin-row:hover .currencies-table-coin-row__name {
+  color: #00C26F;
+}
+.currencies-table-coin-row__td {
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 15px;
+}
+.currencies-table-coin-row__image {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.currencies-table-coin-row__ticker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: color ease .1s;
+}
+.currencies-table-coin-row__network-mobile {
+  margin-left: 8px;
+}
+.currencies-table-coin-row__network-desktop {
+  display: none;
+}
+.currencies-table-coin-row__name {
+  font-size: 12px;
+  line-height: 16px;
+  color: #9696A5;
+  transition: color ease .1s;
+}
+
+@media screen and (min-width: 768px) {
+  .currencies-table-coin-row:before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .currencies-table-coin-row__td {
+    height: 48px;
+    padding-left: 24px;
+  }
+  .currencies-table-coin-row__image {
+    width: 24px;
+    height: 24px;
+  }
+  .currencies-table-coin-row__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .currencies-table-coin-row__ticker {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .currencies-table-coin-row__network-mobile {
+    display: none;
+  }
+  .currencies-table-coin-row__network-desktop {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 3px;
+  }
+  .currencies-table-coin-row__name {
+    font-size: 15px;
+    line-height: 21px;
+    margin-left: 8px;
+  }
+}

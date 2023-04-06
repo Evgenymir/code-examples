@@ -1,0 +1,37 @@
+.sort-menu {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  min-width: 70px;
+  user-select: none;
+}
+.sort-menu__opened .sort-menu__text svg {
+  transform: rotate(180deg);
+}
+.sort-menu__text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #9696A5;
+  cursor: pointer;
+  outline: 0;
+}
+.sort-menu__text svg {
+  display: block;
+  margin-left: 4px;
+  transition: transform ease .3s;
+}
+.sort-menu__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 70px;
+  background-color: #18181B;
+  border: 1px solid #3D3D58;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  margin-top: 4px;
+}

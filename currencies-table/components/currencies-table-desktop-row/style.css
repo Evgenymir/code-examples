@@ -1,0 +1,62 @@
+.currencies-table-desktop-row {
+  height: 48px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  border-top: 1px solid #3D3D58;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.currencies-table-desktop-row:hover .currencies-table-desktop-row__ticker,
+.currencies-table-desktop-row:hover .currencies-table-desktop-row__name {
+  color: #00C26F;
+}
+.currencies-table-desktop-row__td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currencies-table-desktop-row__td:first-child {
+  width: 35%;
+  justify-content: flex-start;
+}
+.currencies-table-desktop-row__td:nth-child(2) {
+  width: 161px;
+  margin-left: auto;
+}
+.currencies-table-desktop-row__td:nth-child(3) {
+  width: 187px;
+}
+.currencies-table-desktop-row__td:nth-child(4) {
+  width: 136px;
+}
+.currencies-table-desktop-row__td:nth-child(5) {
+  width: 115px;
+}
+
+.currencies-table-desktop-row__image {
+  width: 22px;
+  height: 24px;
+  margin-right: 8px;
+}
+.currencies-table-desktop-row__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 21px;
+}
+.currencies-table-desktop-row__ticker {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 8px;
+  transition: color ease .2s;
+}
+.currencies-table-desktop-row__name {
+  color: #9696A5;
+  transition: color ease .2s;
+}
+.currencies-table-desktop-row__network {
+  margin-left: 8px;
+}

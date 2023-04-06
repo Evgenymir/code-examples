@@ -1,0 +1,15 @@
+.currencies-table-desktop__loader {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.currencies-table-desktop__not-found {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .currencies-table-desktop__loader {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

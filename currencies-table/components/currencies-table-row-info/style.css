@@ -1,0 +1,57 @@
+.currencies-table-row-info {
+  min-width: 464px;
+}
+.currencies-table-row-info__ths {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.currencies-table-row-info__th {
+  font-size: 12px;
+  line-height: 24px;
+  color: #9696A5;
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+.currencies-table-row-info__th:nth-child(1) {
+  width: 121px;
+}
+.currencies-table-row-info__th:nth-child(2) {
+  width: 145px;
+}
+.currencies-table-row-info__th:nth-child(3) {
+  width: 97px;
+}
+.currencies-table-row-info__th:nth-child(4) {
+  width: 77px;
+}
+
+@media screen and (min-width: 992px) {
+  .currencies-table-row-info {
+    max-width: 100%;
+  }
+  .currencies-table-row-info__ths {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .currencies-table-row-info__th {
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .currencies-table-row-info__th:nth-child(1) {
+    width: 161px;
+  }
+  .currencies-table-row-info__th:nth-child(2) {
+    width: 187px;
+  }
+  .currencies-table-row-info__th:nth-child(3) {
+    width: 136px;
+  }
+  .currencies-table-row-info__th:nth-child(4) {
+    width: 115px;
+  }
+}
